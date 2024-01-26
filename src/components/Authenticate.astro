@@ -1,0 +1,27 @@
+---
+import Layout from './Layout.astro';
+---
+
+<Layout title="Spotify Authentication">
+  <main>
+    <div id="content">
+      <div class="header">
+        <h1>Spotify Authentication</h1>
+        <p>Click the button below to authenticate with Spotify:</p>
+        <div class="bttns">
+          <!-- Add your authentication logic directly in the component -->
+          <button on:click={authenticateWithSpotify} class="bttn primary">Authenticate</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+// Add your authentication logic directly in the component
+function authenticateWithSpotify() {
+  // Your Spotify authentication code goes here
+  console.log('Authenticating with Spotify...');
+  // Redirect the user to the Spotify authorization URL or use your preferred authentication method
+}
+</script>
